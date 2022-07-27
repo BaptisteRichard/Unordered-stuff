@@ -18,8 +18,6 @@ source $config
 logfile=/tmp/crossed-$1.log
 echo "[`date`] starting crossed backup $1 " > $logfile;
 
-source='/mnt/private'
-
 #select key
 options="--encrypt-key $encryptionKey --full-if-older-than=$fullBackupInterval"
 
